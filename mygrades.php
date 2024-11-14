@@ -1,4 +1,5 @@
 <?php
+include 'navigation_bar.php';
 $dbc = mysqli_connect("localhost", "csc350", "xampp", "Mygrading");
 if (!$dbc) {
     die("Connection failed: If you're the hacker, we are not using mysql trust me");
@@ -44,6 +45,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     $weighted_final = $final_project * 0.4;
 
     $final_grade = $weighted_homework + $weighted_quiz + $weighted_midterm + $weighted_final;
+    $final_grade = round($final_grade);
 
     echo "<tr>
             <td style='border: 1px solid black; padding: 8px;'>$student_id</td>

@@ -1,4 +1,5 @@
 <?php
+include 'navigation_bar.php';
 
 $dbc = mysqli_connect("localhost", "csc350", "xampp", "Mygrading");
 if (!$dbc) {
