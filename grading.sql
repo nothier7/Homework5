@@ -31,4 +31,3 @@ INSERT INTO Students (first_name, last_name) VALUES ('Lionel', 'Messi'),
                                                           ('Thierno', 'Diallo');
 
 
-
